@@ -1,19 +1,19 @@
 using Content.Shared.Chemistry.Components;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._CorvaxNext.Footprints.Components;
+namespace Content.Shared._CorvaxNext.FootPrint;
 
 /// <summary>
-/// This is used for marking footsteps, handling footprint drawing.
+///     This is used for marking footsteps, handling footprint drawing.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class FootprintComponent : Component
+public sealed partial class FootPrintComponent : Component
 {
     /// <summary>
-    /// Owner (with <see cref="FootprintVisualizerComponent"/>) of a print (this component).
+    ///     Owner (with <see cref="FootPrintsComponent"/>) of a print (this component).
     /// </summary>
     [AutoNetworkedField]
-    public EntityUid FootprintsVisualizer;
+    public EntityUid PrintOwner;
 
     [DataField]
     public string SolutionName = "step";
