@@ -12,4 +12,6 @@ species-name-vox = Вокс
 snail-hurt-by-salt-popup = Солевой раствор жжёт как кислота!
 # Corvax-Next-Resomi-Start
 species-name-resomi = Резоми
+
 # Corvax-Next-Resomi-End
+
